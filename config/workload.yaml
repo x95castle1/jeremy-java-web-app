@@ -8,6 +8,6 @@ metadata:
 spec:
   source:
     git:
-      url: https://github.com/sample-accelerators/jeremy-java-web-app
+      url: https://github.com/x95castle1/jeremy-java-web-app
       ref:
         branch: main
