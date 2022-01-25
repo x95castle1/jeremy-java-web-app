@@ -3,7 +3,7 @@ LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='default')
 
 k8s_custom_deploy(
-    'jeremy-java-web-app',
+    'another-inner-loop',
     apply_cmd="tanzu apps workload apply -f config/workload.yaml --live-update" +
                " --local-path " + LOCAL_PATH +
                " --source-image " + SOURCE_IMAGE +
@@ -18,5 +18,5 @@ k8s_custom_deploy(
     ]
 )
 
-k8s_resource('another-inner-loop-java-web-app', port_forwards=["8080:8080"],
+k8s_resource('another-inner-loop', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'serving.knative.dev/service': 'another-inner-loop'}])
