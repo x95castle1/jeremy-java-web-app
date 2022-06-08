@@ -26,6 +26,12 @@
 	</licenses>
 
 	<dependencies>
+		<!-- Generate a CVE for Grype -->
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-client</artifactId>
+      <version>3.3.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
