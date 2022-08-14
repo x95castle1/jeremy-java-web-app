@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: another-inner-loop
-  description: Tanzu Java Web App Development
+  description: Tanzu Java Web App
   tags:
     - app-accelerator
     - java
